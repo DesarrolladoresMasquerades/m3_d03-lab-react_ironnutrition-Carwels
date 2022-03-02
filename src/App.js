@@ -10,11 +10,8 @@ function App() {
   const [foods, setFood] = useState(foodsList);
 
   const addNewFood = (newFood) => {
-    const updatedFoodsData = [...foodsData, newFood]
-    const updatedFoods = [...foods, newFood]
-    
-    setFoodsData(updatedFoodsData)
-    setFood(updatedFoods)
+    setFoodsData([...foodsData, newFood]);
+    setFood([...foods, newFood]);
   }
 
   return (
