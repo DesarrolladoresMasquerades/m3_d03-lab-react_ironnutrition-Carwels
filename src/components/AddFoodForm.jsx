@@ -12,10 +12,10 @@ export default function AddFoodForm(props) {
 
 
     function handleDataChange(event){
-        const key = event.target.name;
+        const name = event.target.name;
         const value = event.target.value;
 
-        setFormData(formData=> ({...formData, [key]: value}))
+        setFormData(formData=> ({...formData, [name]: value}))
     }
 
     function handleSubmit(event){
